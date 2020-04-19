@@ -1,6 +1,6 @@
-com/hello/Helloworld.class
-com/hello/MySecurityHotspotExample.class
 com/hello/MySecurityVulnerabilityExample.class
+com/hello/MySecurityHotspotExample.class
+com/hello/Helloworld.class
+com/hello/HelloServlet.class
 com/hello/MyBugExample.class
 com/hello/MyCodeSmellExample.class
-com/hello/HelloServlet.class

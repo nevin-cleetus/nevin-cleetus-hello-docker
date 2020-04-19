@@ -24,12 +24,21 @@ public class HelloServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+            doPost(request,response); 
+        }
+
+
+
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String yourName = request.getParameter("username");
+                if(yourName == null){
+                    yourName = "World";
+                } 
 		PrintWriter writer = response.getWriter();
 		writer.println("<h1><font color='green'>  Hello " + yourName + "</h1>");
 		writer.close();
